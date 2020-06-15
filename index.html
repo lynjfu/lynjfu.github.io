@@ -62,7 +62,11 @@
 		border: 2px solid #ccc;
 		background: #fff;
 	}
-	@media (max-width: 600px) {
+
+	@media only screen
+	and (min-device-width : 375px) 
+	and (max-device-width : 812px)
+	and (-webkit-device-pixel-ratio : 3) {
 
       #container {
             width:100%;
@@ -71,7 +75,18 @@
             border: none;
        }
 
-}
+	}
+
+	@media (max-width: 700px) { 
+      #container {
+            width:100%;
+            margin:0;
+            padding:0;
+            border: none;
+       }object-position: 
+   }
+
+
 	#inner{
 		background:#f6f6f6;
 		margin: 8px;
