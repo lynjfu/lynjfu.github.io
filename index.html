@@ -10,13 +10,17 @@
 <style>
 	body {
 		font-family: 'IBM Plex Sans', sans-serif;
-		color: #333333;
+		color: #333;
 	}
 	table{
 		width:100%;
 	}
 	tr{
 		border: 1px solid black;
+	}
+	.maintext{
+		color: #555;
+		margin-left:20px;
 	}
 	.major{
 		border: 5px solid white;
@@ -26,7 +30,8 @@
 	}
 	#name {
 		font-size: 12px;
-
+		vertical-align: center;
+		color:#555;
 	}
 	#container {
 		text-align: center;
@@ -34,10 +39,16 @@
 		margin-right: auto;
 		margin-top: 50px;
 		margin-bottom:50px;
-		width: 70%;
+		width: 600px;
+		border: 1px solid #ddd;
+	}
+	#inner{
 		background:#f6f6f6;
+		margin: 6px;
 	}
 	#mit{
+
+		font-size:14px;
 	}
 	#deets {
 		font-size: 14px;
@@ -58,6 +69,7 @@
 <body>
 
 <div id="container">
+<div id="inner">
 
 <table>
 	<tr>
@@ -72,7 +84,7 @@
 		<a href="https://www.linkedin.com/in/carolynjfu/" title="linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Font_Awesome_5_brands_linkedin.svg/512px-Font_Awesome_5_brands_linkedin.svg.png" height="15px" style="opacity:0.5"></a>
 		<!-- <img src="cvicon.png" height="15px" title="CV" style="opacity:0.8"> -->
 		</p>
-		<br>
+
 	</td>
 	<td id = "pic">
 		<img src='small_sloan.png', height=200px, border=1px>
@@ -83,22 +95,27 @@
 <hr class="major">
 <div id="deets">
 <h2><b>About</b></h2>
-<p>I study <b>innovation strategy</b> in incumbent organizations &mdash; specifically, how their interactions with the wider innovation ecosystem can uncover new sources of value. I utilize both <b>computational simulations</b> and <b>qualitative archival methods</b> in my work.
+<p class="maintext">I study <b>innovation strategy</b> in incumbent organizations &mdash; specifically, how their interactions with the wider innovation ecosystem can uncover new sources of value. I utilize both <b>computational simulations</b> and <b>qualitative archival methods</b> in my work.
 
 <br><br>
-Previously, I worked in defence research in Singapore, leading projects on elite combat performance. I also led a non-profit organization raising entrepreneurial intention in Singapore. I have degrees in Mechanical Engineering from the University of Pennsylvania and Stanford University.
+I previously worked in defence research, leading projects on elite combat performance. I also led a non-profit organization raising entrepreneurial intention in Singapore. I have degrees in Mechanical Engineering from the University of Pennsylvania and Stanford University.
 <br><br>
 </p>
+
+
 <hr class="minor">
+<br>
 <h2>Research</h2>
+<p class="maintext">
 My dissertation explores how an incumbent in a cultural market was constrained by audience heterogeneity and market structure in its attempts to learn.
 <br><br>
-Working papers:<ul>
-	<li>Fu, CJ (2020). "Draw Near to Go Far: The Role of Convergence in Capitalizing on Exploration". Working Paper. Under Review.
+Manuscripts Under Review:<ul class="maintext">
+	<li>Fu, CJ (2020). <i>"Draw Near to Go Far: The Role of Convergence in Capitalizing on Exploration"</i>. Working Paper.
 	<!-- <i>Computational simulation of how firms can aggregate multiple valuable epxlorations, when they offer unique forms of value that are incompatible with one another.</i> -->
 	</li>
 	
 </ul>
+</p>
 
 
 <!-- 
@@ -122,7 +139,7 @@ Teaching Assistant
 
 
 </div>
-
+</div>
 
 
 
