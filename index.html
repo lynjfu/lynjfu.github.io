@@ -6,6 +6,7 @@
 <head>
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600" rel="stylesheet">
 	<meta name="description" content="Carolyn Fu, PhD Candidate, MIT Sloan. I study innovation strategy; specifically, how firms can uncover new sources of value through their interactions with the wider innovation ecosystem."/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
@@ -13,6 +14,7 @@
 <!-- Heya wandering visitor! Please pardon the mess, this code is atrocious lol -->
 
 <style>
+
 	body {
 		font-family: 'IBM Plex Sans', sans-serif;
 		color: #333;
@@ -21,14 +23,30 @@
 		/*background: #f8f8f8;*/
 		background: #fff;
 		margin:0;
-		font-size: 1em; 
 		border-top: 18px solid #485063;
-	}
+/*		font-size:1rem;
+*/	}
 
-	table{
+/*	table{
 		width:80%;
 		margin: auto;
+		font-size: 1em;
+
+	}*/
+
+	#wrap{
+		display:flex;
 	}
+
+	#picdiv{
+		width:25%;
+/*		vertical-align: top;
+*/	}
+	#blurbdiv{
+		width:75%;
+		margin-left:20px;
+	}
+
 
 	tr{
 		border: 1px solid black;
@@ -67,8 +85,8 @@
 	#byline{
 		margin:0;
 		padding:0;
-		font-size: 0.9em;
-	}
+/*		font-size: 0.9em;
+*/	}
 	.me{
 		border: 1px solid #eee;
 	}
@@ -88,7 +106,7 @@
 		margin-right: auto;
 		margin-top: 50px;
 		margin-bottom:50px;
-		width: 700px;
+		width: 800px;
 /*		border: 2px solid #ccc;
 */		background: #fff;
 	}
@@ -101,6 +119,7 @@
 		padding-bottom: 20px;
 		color: #555;
 	}
+
 	#pic{
 		text-align: right;
 	}
@@ -117,41 +136,77 @@
 		padding: 10px;
 	}
 
+
+
 	@media only screen
 	and (min-device-width : 375px) 
 	and (max-device-width : 812px)
 	and (-webkit-device-pixel-ratio : 3) {
 
       #container {
-            width:100%;
-            margin:0;
+*/            margin:0;
             padding:0;
             border: none;
        }
 
        body{
-       	font-size:2em;
+       	font-size:2rem;
+       	position:absolute;
        }
+       #menu{
+       	font-size:2.5rem;
+
+       }
+
        .icons{
        	height:40px;
        }
-       table{
-       	font-size:1.1em;
-       	width:100%;
-       }
        #profilepic{
        	height:350px;
+       }
+
+       #picdiv,#blurbdiv{
+       	width:100%;
+       	margin-left:0px;
+       }
+       #wrap{
+       	flex-direction:column;
        }
 
 	}
 
 	@media (max-width: 700px) { 
       #container {
-            width:100%;
             margin:0;
             padding:0;
             border: none;
        }
+       body{
+       	font-size:2rem;
+       	position:absolute;
+       }
+       #menu{
+       	font-size:2.5rem;
+
+       }
+       #wrap{
+       	flex-direction:column;
+       }
+       #picdiv,#blurbdiv{
+       	width:100%;
+       	margin-left:0px;
+       	margin:none;
+       }
+
+       #profilepic{
+       	height:350px;
+       }
+       .icons{
+       	height:40px;
+       }
+    }
+
+
 
    }
 
@@ -175,22 +230,25 @@
 <div class="main">
 	<div id="page1" class="content">
 
+<!-- 	
 		<p id="nameplate">
 			<table>
 				<tr>
 				<td>
 					<p>
 					<p id="byline">PhD Candidate, Economic Sociology<br>
-					MIT Sloan School of Management<br></p>
+					MIT Sloan School of Management<br>
+					<i><br>Incoming Postdoc (2022) and Assistant Professor (2023) in Strategy <br>
+					Harvard Business School</i></p>
 					<br>
 					<a href="mailto:cjfu@mit.edu" title="cjfu@mit.edu"><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/PICOL_icon_Mail.svg/32px-PICOL_icon_Mail.svg.png"></a>&nbsp; &nbsp;&nbsp;
 					<a href="https://twitter.com/carolynjfu"  title="@CarolynJFu"><img src="https://pngimg.com/uploads/twitter/twitter_PNG1.png" class="icons"></a> &nbsp;&nbsp;&nbsp;
 					<a href="https://scholar.google.com/citations?user=WpbZtGEAAAAJ&hl=en" title="scholar"><img class="icons" src="scholar.jpeg"></a>&nbsp; &nbsp;&nbsp;
-					<a href="https://www.linkedin.com/in/carolynjfu/" title="linkedin"><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Font_Awesome_5_brands_linkedin.svg/512px-Font_Awesome_5_brands_linkedin.svg.png"></a>&nbsp; &nbsp;&nbsp;
+					<a href="https://www.linkedin.com/in/carolynjfu/" title="linkedin"><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Font_Awesome_5_brands_linkedin.svg/512px-Font_Awesome_5_brands_linkedin.svg.png"></a>&nbsp; &nbsp;&nbsp; -->
 
-					<!-- <img src="cvicon.png" height="15px" title="CV" style="opacity:0.8"> -->
-					<!-- <a href="CV-Fu-Sept2021.pdf">CV</a> -->
-					</p>
+					<!-- <img src="cvicon.png" height="15px" title="CV" style="opacity:0.8">
+					<a href="CV-Fu-Sept2021.pdf">CV</a> -->
+<!-- 					</p>
 				</td>
 				<td id = "pic">
 					<img id="profilepic" src='small_sloan.png', height=150px, id="me">
@@ -199,14 +257,40 @@
 			</table>
 		</p>
 		 
-		<hr class="minor">
+		<hr class="minor"> -->
+
 
 		<h2>About Me</h2>
-		<p>I study <b>innovation strategy</b> &mdash; specifically, how firms can uncover new sources of value through their interactions with the wider innovation ecosystem. I utilize both <b>computational simulations</b> and <b>qualitative archival methods</b> in my work.
 
-		<br><br>
-		<span data-nosnippet>I previously worked in defence research, leading projects on elite combat performance. I also founded a non-profit organization raising entrepreneurial intention in Singapore. I have a BSE in Mechanical Engineering from the University of Pennsylvania, and an MSE in Mechanical Engineering from Stanford University.</span>
-		</p>
+		<div id="wrap">
+			<div id="picdiv">
+			<p align="center">
+				<img id="profilepic" src='small_sloan.png', height=150px, id="me">
+			</p>
+
+			<p align="center">
+
+				<a href="mailto:cjfu@mit.edu" title="cjfu@mit.edu"><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/PICOL_icon_Mail.svg/32px-PICOL_icon_Mail.svg.png"></a>&nbsp; &nbsp;&nbsp;
+				<a href="https://twitter.com/carolynjfu"  title="@CarolynJFu"><img src="https://pngimg.com/uploads/twitter/twitter_PNG1.png" class="icons"></a> &nbsp;&nbsp;&nbsp;
+				<a href="https://scholar.google.com/citations?user=WpbZtGEAAAAJ&hl=en" title="scholar"><img class="icons" src="scholar.jpeg"></a>&nbsp; &nbsp;&nbsp;
+				<a href="https://www.linkedin.com/in/carolynjfu/" title="linkedin"><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Font_Awesome_5_brands_linkedin.svg/512px-Font_Awesome_5_brands_linkedin.svg.png"></a>
+			</p>
+			</div>
+			<div id="blurbdiv">
+				
+
+				<p> I am a PhD Candidate in Economic Sociology at MIT's Sloan School of Management, and incoming Assistant Professor (2023) in the Strategy Unit at Harvard Business School.
+
+				<br><br>
+				I study <b>innovation strategy</b> &mdash; specifically, how firms can uncover new sources of value through their interactions with the wider innovation ecosystem. I utilize both <b>computational simulations</b> and <b>qualitative archival methods</b> in my work.
+
+				<br><br>
+				<span data-nosnippet>I previously worked in defence research, leading projects on elite combat performance. I also founded a non-profit organization raising entrepreneurial intention in Singapore. I have a BSE in Mechanical Engineering from the University of Pennsylvania, and an MSE in Mechanical Engineering from Stanford University.</span>
+
+				</p>
+			</div>
+		</div>
+
 	</div>
 	<div id="page2" class="content">
 		<h2>Research</h2>
@@ -291,15 +375,20 @@
 $('#menu a').click(function(e){
      hideContentDivs();
      var tmp_div = $(this).index();
-     $('.main div').eq(tmp_div).show();
+     var pagename = '#page'.concat(tmp_div+1);
+     $(pagename).show();
   });
 
 function hideContentDivs(){
-    $('.main div').each(function(){
-    $(this).hide();});
+    $('.content').hide();
 }
+
 hideContentDivs();
-$('.main div').eq(0).show();
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	document.body.style.zoom = 0.5;
+}
+
+$('#page1').eq(0).show();
 
 </script>
 </html>
